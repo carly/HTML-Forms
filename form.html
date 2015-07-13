@@ -39,45 +39,39 @@
 
 <p>Place your orders here! You know you want to.</p>
 
-<form>
+<form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
     <label for="field-firstname">First Name: </label>
-    <input type="text" name="firstname" id="field-firstname">
+    <input type="text" name="firstname" id="field-firstname"><br>
     <label for="field-lastname">Last Name: </label>
-    <input type="text" name="lastname" id="field-lastname">
-</form> 
-<form>
-    Melon Type:
+    <input type="text" name="lastname" id="field-lastname"><br>
+Melon Type:
     <select name="melontype">
         <option value="watermelon">Watermelon</option>
         <option value="honeydew">Honeydew</option>
         <option value="canteloupe">Canteloupe</option>
         <option value="crenshaw">Crenshaw</option>
         <option value="canary">Canary</option>
-    </select>
-</form>  
-<form>
+    </select><br>
     <label for="field-quantity">Quantity: </label>
-    <input type="text" name="quantity" id="field-quantity">
-</form> 
-<form>
+    <input type="text" name="quantity" id="field-quantity"><br>
+    
     <input type="radio" name="time" value="am">AM
     <input type="radio" name="time" value="pm">PM
-    <input type="radio" name="time" value="wat">WAT
-</form>
-<form>
-    <input type="radio" name="recustomer" value="yes">YES
-    <input type="radio" name="recustomer" value="no">NO
-</form>
-<form>
+    <input type="radio" name="time" value="wat">WAT<br>
+
+    <input type="radio" name="returning" value="yes">YES
+    <input type="radio" name="returning" value="no">NO<br>
+
     <input type="checkbox" name="stats" value="dog">Dog
     <input type="checkbox" name="stats" value="cat">Cat
     <input type="checkbox" name="stats" value="hedgehog">Hedgehog
     <input type="checkbox" name="stats" value="balloonicorn">Balloonicorn
-    <input type="checkbox" name="stats" value="yak">Yak
-</form>
-<form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
+    <input type="checkbox" name="stats" value="yak">Yak<br>
+
     <input type="submit">
 </form>
-
+<footer>
+    <p>*Quantities given are by the flat.</p>
+</footer>
 </body>
 </html>    
