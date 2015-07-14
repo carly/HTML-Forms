@@ -41,16 +41,16 @@
 
 <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
     <label for="field-firstname">First Name: </label>
-    <input type="text" name="firstname" id="field-firstname"><br>
+    <input type="text" name="firstname" id="field-firstname" autofocus=true placeholder="Enter your first name"><br>
     <label for="field-lastname">Last Name: </label>
-    <input type="text" name="lastname" id="field-lastname"><br>
+    <input type="text" name="lastname" id="field-lastname" placeholder="Enter your last name"><br>
 
 <!-- Date input type -->
     <label for="field-date">Birthdate: </label>
     <input type="date" name="date" id="field-date"><br>
 <!-- Email input type -->
     <label for="field-email">E-mail: </label>
-    <input type="email" name="email" id="field-email"><br>    
+    <input type="email" name="email" id="field-email" placeholder="Enter your e-mail address"><br>    
 <!-- Large text area input type -->
     <textarea rows="10" cols="20" placeholder="Enter Life Story"></textarea><br>
 
@@ -62,16 +62,17 @@ Melon Type:
         <option value="crenshaw">Crenshaw</option>
         <option value="canary">Canary</option>
     </select><br>
-    <label for="field-quantity">Quantity: </label>
-    <input type="text" name="quantity" id="field-quantity"><br>
+    <label for="field-quantity">Quantity*: </label>
+    <input type="text" name="quantity" id="field-quantity" placeholder="Enter a number"><br>
     
-    <input type="radio" name="time" value="am">AM
-    <input type="radio" name="time" value="pm">PM
-    <input type="radio" name="time" value="wat">WAT<br>
-
+Delivery Time:
+    <input type="radio" name="time" value="am">12:00am-12:00pm
+    <input type="radio" name="time" value="pm">12:00pm-12:00am
+    <input type="radio" name="time" value="wat">Time is an illusion<br>
+Returning Customer?
     <input type="radio" name="returning" value="yes">YES
     <input type="radio" name="returning" value="no">NO<br>
-
+For Statistical Purposes:
     <input type="checkbox" name="stats" value="dog">Dog
     <input type="checkbox" name="stats" value="cat">Cat
     <input type="checkbox" name="stats" value="hedgehog">Hedgehog
@@ -80,6 +81,7 @@ Melon Type:
 
     <input type="submit">
 </form>
+
 <footer>
     <p>*Quantities given are by the flat.</p>
 </footer>
